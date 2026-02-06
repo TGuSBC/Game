@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>AluGames</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">
+      🎮 <span>AluGames</span>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <h1>Aluguel de <span>boardgames</span></h1>
+
+    <section class="cards">
+      <div class="card" id="jogo-1">
+        <img class="item-livre" src="https://imgs.search.brave.com/aLxt3hsj2tsE4DgIo4-BVGZP3J1g-Oem-uwBGxi0UMo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtYXNzZXQtZGVs/aXZlcnkuaGFzYnJv/YXBwcy5jb20vOTY4/OGMxZWUyODRiYzM0/NTJiYTUyZGNlODdk/OGM5N2E0YzJiOTQ4/Yy8wZGI0MTQwOWMx/MGI0NmFlOTliNzEw/NDI3YTFkNzkxMy5w/bmc" alt="Monopoly">
+        <h2>Monopoly</h2>
+        <button onclick="alterarStatus(1)" class="btn">Alugar</button>
+      </div>
+
+      <div class="card" id="jogo-2">
+        <img class="item-livre " src="https://imgs.search.brave.com/FJxxFqwgqbsUk3iptuGPAYNfL4rWv1IOpC_vvYRnH6o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzk2NzA0MS1NTEE5/NTg0NDQwODkzM18x/MDIwMjUtRS53ZWJw" alt="Ticket to Ride">
+        <h2>Ticket to Ride</h2>
+        <button onclick="alterarStatus(2)" class="btn">Alugar</button>
+      </div>
+
+      <div class="card" id="jogo-3">
+        <img class="item-livre" src="https://imgs.search.brave.com/yL6XvpW5H8idSR3Oxd23rMJn6Uo4-Vq6J5VyYQdHJ_w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGxpZ2h0c3Bl/ZWQuY29tL3Nob3Bz/LzY1MjAxNy9maWxl/cy81NDk0MjgwMC9p/bWFnZS5qcGc" alt="Takenoko">
+        <h2>Takenoko</h2>
+        <button onclick="alterarStatus(3)" class="btn">Devolver</button>
+      </div>
+
+      <div id="overlay" class="overlay escondido">
+       <div class="popup">
+        <h2>Devolução</h2>
+        <p id="popuptext">Tem certeza que deseja devolver esse jogo?</p>
+        <div class="btnpp">
+        <button onclick="confirmarpopup()" class="btnp" id="btnp">Confirmar</button>
+        <button onclick="recusarpopup()" class="btnp nao" id="btnpn">Recusar</button>
+        </div>
+       </div>
+      </div>
+    </section>
+    <section class="rentHistory">
+      <div class="tableHistory">
+        <h2>Histórico de jogos alugados</h2>
+        <div class="tableLog">
+          <p class="itemlog1" id="itemHlog"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
