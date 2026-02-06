@@ -8,6 +8,7 @@ Projeto de aluguel de jogos desenvolvido durante meus estudos na plataforma Alur
 
 🔗 Demo online
 
+https://tgusbc.github.io/Game/
 
 🛠️ Tecnologias utilizadas
 
